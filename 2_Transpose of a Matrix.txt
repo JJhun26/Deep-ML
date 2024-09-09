@@ -1,0 +1,10 @@
+##My solution
+
+def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
+	b = list(zip(*a))
+	return b
+
+##모범답안
+
+def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
+    return [list(i) for i in zip(*a)]
